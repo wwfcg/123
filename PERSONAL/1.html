@@ -5,7 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-   1323123123123123123123123123123123123123123123123123123123
+
+<header class="containerHeader">
+   <div>
+    <nav>
+        <a href="1.html">Главная</a>
+    </nav>
+   </div>
+</header>
+
+<body class="container">
+   
 </body>
+
+<footer>
+    
+</footer>
 </html>
+
+<style>
+    .containerHeader{
+        display: flex;
+        width: 100%;
+        height: 75px;
+        flex-direction: row;
+	    flex-wrap: wrap;
+    }
+
+    .container{
+    display: grid;
+    grid-template-columns:  33% 33% 33%;
+    grid-template-rows:  200px 200px 75px;
+    gap: 20px;
+    grid-template-areas: 
+    "header header header header"
+    "content content content content"
+    "content content content content"
+    "footer footer footer footer";
+}
+    
+    .item1{
+        grid-area: header;
+    }
+
+    .item2{
+        grid-area: content;
+    }
+
+    .item3{
+        grid-area: footer;
+    }
+</style>
